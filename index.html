@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gravity</title>
+    <style>
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <label for="gravityconstantInput">Gravitational constant:</label>
+      <input type="number" id="gravityconstantInput" value="6.6743e-11">
+      <div>
+        <label for="planetMassInput">Planet mass:</label>
+        <input type="number" id="planetMassInput" value="10e15">
+      </div>
+      <div>
+        <label for="asteroidMassInput">Asteroid mass:</label>
+        <input type="number" id="asteroidMassInput" value="10e2">
+      </div>
+      <div>
+        <label for="asteroidxInput">Asteroid x:</label>
+        <input type="number" id="asteroidxInput" value="20">
+      </div>
+      <div>
+        <label for="asteroidyInput">Asteroid y:</label>
+        <input type="number" id="asteroidyInput" value="400">
+      </div>
+      <div>
+        <label for="asteroidvxInput">Asteroid speed x:</label>
+        <input type="number" id="asteroidvxInput" value="10">
+      </div>
+      <div>
+        <label for="asteroidvyInput">Asteroid speed y:</label>
+        <input type="number" id="asteroidvyInput" value="-25">
+      </div>
+      <button id="restart-button">Restart</button>
+    </div>
+    <canvas id="game-canvas" width="800" height="800"></canvas>
+    <script src="script.js"></script>
+  </body>
+</html>
